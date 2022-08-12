@@ -1,8 +1,14 @@
 name: murzfeed-bot-runner
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
+
+env:
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+  DETA_BASE_TOKEN: ${{ secrets.DETA_BASE_TOKEN }}
+  TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
 jobs:
   build:
