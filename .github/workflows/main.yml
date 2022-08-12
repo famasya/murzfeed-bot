@@ -11,7 +11,7 @@ env:
   TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
 jobs:
-  build:
+  runner:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,5 +22,7 @@ jobs:
       - uses: egordm/gha-yarn-node-cache@v1
       - name: install dependencies
         run: yarn install
+      - name: compile resources
+        run: yarn compile
       - name: run bot
-        run: yarn install
+        run: yarn start
