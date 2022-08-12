@@ -44,7 +44,7 @@ axiosInstance
         // post to telegram
         bot.api.sendMessage(
           process.env.TELEGRAM_CHANNEL_ID,
-          `${post.status}: *${post.teaTitle}*\n\n${post.teaContent}\n\nSrc: ${post.teaSource}\n\\[[Discussion](https://murzfeed-app.com/p/${post.murzFeedPostId})\\]`,
+          `${post.status}: *${post.teaTitle}*\n\n${post.teaContent}\n\nSrc: ${post.teaSource}\n\\[[Discussion](https://murzfeed-app.com/p/${post.murzFeedPostId})\]`,
           {
             parse_mode: "Markdown",
             disable_web_page_preview: true,
