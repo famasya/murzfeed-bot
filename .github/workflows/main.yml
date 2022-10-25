@@ -26,3 +26,4 @@ jobs:
         run: yarn compile
       - name: run bot
         run: yarn start
+      - uses: gautamkrishnar/keepalive-workflow@v1 # prevent github suspend this workflow 
