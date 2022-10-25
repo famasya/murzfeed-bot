@@ -3,7 +3,7 @@ name: murzfeed-bot-runner
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
 
 env:
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: egordm/gha-yarn-node-cache@v1
+      - uses: bahmutov/npm-install@HEAD
       - name: install dependencies
         run: yarn install
       - name: compile resources
