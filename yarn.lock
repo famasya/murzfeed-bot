@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@grammyjs/types@^2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@grammyjs/types/-/types-2.8.2.tgz#cd8e176a93d32c32848c5af57f0958c2131853e4"
-  integrity sha512-RNYVxg5+yOOeDN9PY05KGEA/82vNXd7QMQPtEMCT8neg1jl7Keg/cbUElHOU8zYQUvVChu3uYSkfkviLAxvDSg==
+"@grammyjs/types@^2.10.0":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@grammyjs/types/-/types-2.10.1.tgz#26d3f560547a9f3bd382d456880c5c76f2d9f57c"
+  integrity sha512-FSkl3BZFGJTp7/Y5iw9QH/pdl7JuQue9iZmPMnrTH3ZLOjGOWAhKRe2ElKMmGYe3TmCQKVUrftuvsTuPkoz0Dw==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.0"
@@ -268,12 +268,12 @@ formdata-polyfill@^4.0.10:
   dependencies:
     fetch-blob "^3.1.2"
 
-grammy@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/grammy/-/grammy-1.10.1.tgz#44411e31e03c1cfeb764a96a1304ae730de95937"
-  integrity sha512-HFcFFq/9MsjQODGWL0EZKaamxNIQpHOzGsj0c/0mjQgtF7l1fJ8YK18A9CYWDXm7gYcJhY+jFMly+I0VN97LSw==
+grammy@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/grammy/-/grammy-1.12.0.tgz#fffb80109731cbd56ccd592cec5aff9dd5e682b6"
+  integrity sha512-/2Mi4MyVPeFXjTd4v3pRK8gb/YdWFbZrj/8HTp5daQyTOx4/U95XFL0Ao+e9hf4XbL7RCOpanXaTL8+UXXcNqw==
   dependencies:
-    "@grammyjs/types" "^2.8.2"
+    "@grammyjs/types" "^2.10.0"
     abort-controller "^3.0.0"
     debug "^4.3.4"
     node-fetch "^2.6.7"
